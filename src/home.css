@@ -1,0 +1,305 @@
+.react-3d-carousel .slider-container {
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    width: 100% !important;
+    margin: 0px auto 0px -50% !important;
+}
+
+.react-3d-carousel .slider-container .slider-left div {
+    display: none;
+}
+
+.react-3d-carousel .slider-container .slider-right div {
+    display: none;
+}
+
+/* Review part start */
+
+body {
+    margin-top: 20px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.reviewdiv {
+    background: #89160f;
+}
+
+.reviewtitle {
+    color: white;
+}
+
+.hash-list {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .hash-list.cols-3>li:nth-last-child(-n+3) {
+        border-bottom: none;
+    }
+
+    .hash-list.cols-3>li {
+        width: 33.3333%;
+    }
+
+    .cardTitle {
+        min-height: 78px !important;
+    }
+}
+
+.hash-list>li {
+    display: block;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pad-30,
+.pad-30-all>* {
+    padding: 30px;
+}
+
+/* img {
+    border: 0;
+} */
+.mgb-20,
+.mgb-20-all>* {
+    margin-bottom: 20px;
+}
+
+.wpx-100,
+.wpx-100-after:after {
+    width: 100px;
+}
+
+.img-round,
+.img-rel-round {
+    border-radius: 50%;
+}
+
+.mgb-40,
+.mgb-40-all>* {
+    /* margin-bottom: 40px; */
+}
+
+.align-center {
+    text-align: center;
+}
+
+.font-cond-b {
+    font-weight: 700 !important;
+    font-family: initial;
+}
+
+.reviewcard li {
+    background: #fff;
+}
+
+.wpx-100, .wpx-100-after:after {
+    width: 100px;
+    height: 100px;
+}
+
+/* Review part end */
+
+/* Card slider start */
+body {
+    /* background-color: #eee; */
+}
+
+.titlee {
+
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+    border: none;
+}
+
+.cardf {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 5;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    /* margin-top: 20px; */
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+
+.carousel-indicators .active {
+    background-color: white;
+    max-width: 12px;
+    margin: 0 3px;
+    height: 12px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    flex-direction: column;
+}
+
+
+
+.btn {
+    margin-top: auto;
+}
+
+/* Card slider End */
+
+
+
+
+/* Horizontal Card Start */
+
+.fourcardsec {
+    margin: 30px;
+}
+
+.cardTitle h1 {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+.fourimgblock img {
+    height: 150px;
+    width: 100%;
+}
+
+/* div [class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+
+.card {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710
+}
+
+.card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+
+}
+
+.cardhover:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.smallcard .card-text {
+    height: 80px;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+}
+
+.card::before {
+    transform-origin: left top;
+}
+
+.card::after {
+    transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+.fourCard {
+    padding: 10px;
+}
+
+/* Horizontal Card Start */
+
+@media (max-width: 768px) {
+    .eachcard {
+        padding-bottom: 10px;
+    }
+
+    .card {
+        min-height: 335px;
+    }
+    .cardTitle {
+        min-height: 78px !important;
+    }
+}
+
+.threeslides {
+    height: 294px;
+    width: 100%;
+}
+
+.twoslides {
+    height: 100%;
+}
+
+.twoslidespaddtop {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Pacifico&display=swap');
+
+.app {
+  font-family: sans-serif;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* background-color: #e4f4f4; */
+  background: url(../public/images/b14.jpg) !important;
+  /* background-size: cover !important; */
+  /* background-repeat: no-repeat !important; */
+  /* background-size: 100% 100% !important; */
+  background-size: cover !important;
+  /* height: 100vh; */
+}
+
+.totalbackcolor {
+  background-color: #ffedab1a;
+  min-height: 100vh !important;
+}
+
+.logincard {
+  padding-top: 55px !important;
+  padding-bottom: 25px !important;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 5px 38px;
+  width: 280px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+ 
+.submitlogin input[type="submit"]:hover {
+  background: #4addaa;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.login-form {
+  height: 400px;
+  width: 300px;
+  background: #81cbcb;
+}
+
+.login label {
+  font-size: 26px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+
+
+
+/* //-----------------------------------------// */
+
+.gradient-custom-2 {
+  /* background: linear-gradient(45deg, rgb(77, 73, 66), rgb(215, 209, 191) 80%); */
+  background: linear-gradient(90deg, rgba(77, 73, 66, 0.07), rgb(193, 193, 193) 80%);
+}
+
+.gradient-custom-3 {
+  /* background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593); */
+}
+
+.titlematrimony {
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: 'Lobster', cursive; */
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6c4c25;
+  font-size: 20px;
+}
+
+.titlematrimonyfree {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #6c4c25;
+}
+
+.contenttitle h4 {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 0px !important;
+}
+
+.contenttitle p {
+  font-family: 'Lobster', cursive;
+  font-size: 32px;
+  color: #66451c;
+  letter-spacing: 2px;
+}
+
+.totalcard {
+  opacity: 96.0%;
+}
+
+.usernamelabel {
+  /* font-family: 'Lobster', cursive; */
+  font-weight: 600;
+  color: #373737;
+}
+
+.passwordlabel {
+  /* font-family: 'Lobster', cursive; */
+  font-weight: 600;
+  color: #373737;
+  margin-bottom: 0px;
+
+}
+
+.submitlogin a {
+  color: #fba0a0 !important;
+}
+
+.loginbutton {
+  width: 100% !important;
+  padding: 5px !important;
+}
+
+.gradient-form {
+  height: auto !important;
+}
+
+.log-bg {
+  width: 100%;
+  height: 77px;
+  background: url(../public/images/login-bg.png) center bottom / 300px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  transition: all 0.5s ease-in-out 0s;
+  animation: 800s linear 0s infinite normal both running movehor;
+  border-radius: 0px 0px 10px 10px;
+  background-repeat: repeat-x;
+}
+
+.cardlog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: .375rem;
+  /* background-color: #fff; */
+  /* background-color: #0000005c; */
+  background-color:#0000001f;
+  background-clip: border-box;
+  /* box-shadow: 20px 16px 12px #b0b0b0; */
+}
+
+@keyframes movehor {
+  0% {
+    background-position: 0px -18px;
+  }
+
+  100% {
+    background-position: -10000% -18px;
+  }
+}
+
+@media (max-width:768px) {
+  .logincard {
+    padding-top: 10px !important;
+    padding-bottom: 25px !important;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: auto !important;
+  }
+
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}
+

@@ -1,0 +1,1 @@
+WOW.prototype.addBox=function(o){this.boxes.push(o)};var wow=new WOW;wow.init(),$(".wow").on("scrollSpy:exit",function(){$(this).css({visibility:"hidden","animation-name":"none"}).removeClass("animated"),wow.addBox(this)}).scrollSpy();

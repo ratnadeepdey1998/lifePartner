@@ -1,0 +1,114 @@
+.navbackground {
+  /* background: linear-gradient(45deg, rgb(242, 209, 132), rgb(255, 238, 178) 80%); */
+  background: #000000;
+  /* position: sticky !important; */
+}
+
+.navlogo {
+  /* background: url(../public/navlogo.png) !important; */
+}
+
+/* .active,
+.dot:hover {
+  background-color: #ffffff00 !important;
+} */
+
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #cfcfcf !important;
+}
+
+#explore:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+#features:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+#pricing:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+#register:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+#collasible-nav-dropdown:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+#profile:hover {
+  color: rgb(200, 42, 42) !important;
+}
+
+.buttoncolor {
+  font-weight: 600;
+  padding-left: 90px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #9b9898;
+}
+
+.imagedrop {
+  background: url(../public/images/man4.jpg) center / 42px;
+  width: 43px;
+  height: 43px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -5px;
+  margin-top: 0.125rem;
+}
+
+.dropdown-menu.show {
+  margin-left: -32px !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+  /* color: red; */
+  width: 31px !important;
+}
+
+
+@media (max-width: 576px) {
+  .buttoncolor {
+    font-weight: 600;
+    padding-left: 0px !important;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../public/images/navtoggle.png");
+  }
+
+}
+
+@media (max-width: 768px) {
+  .buttoncolor {
+    font-weight: 600;
+    padding-left: 0px !important;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../public/images/navtoggle.png");
+  }
+
+}
+
+@media (max-width: 992px) {
+  .buttoncolor {
+    font-weight: 600;
+    padding-left: 0px !important;
+  }
+
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("../public/images/navtoggle.png");
+  }
+
+}
+

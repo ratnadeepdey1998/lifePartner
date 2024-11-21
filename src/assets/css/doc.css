@@ -1,0 +1,2079 @@
+body{ padding: 0px; margin: 0px; list-style: none; font: 400 14px/18px 'Ubuntu'; color:#000; overflow-x: hidden;  }
+p{padding: 0px; margin: 0px;}
+a{padding: 0px; margin: 0px; outline: none;}
+ul{ list-style: none; padding: 0px; margin: 0px;}
+label{ list-style: none; padding: 0px; margin: 0px;}
+ul li{ padding: 0px; margin: 0px;}
+h1, h2, h3, h4, h5, h6{padding: 0px; margin: 0px;}
+input[type="text"]::-webkit-placeholder { opacity: 1;  }
+input[type="text"]::-moz-placeholder { opacity: 1;}
+input[type="password"]::-webkit-placeholder { opacity: 1;}
+input[type="password"]::-moz-placeholder { opacity: 1;}
+input[type="search"]::-webkit-placeholder { opacity: 1;}
+input[type="search"]::-moz-placeholder { opacity: 1;}
+input[type="email"]::-webkit-placeholder { opacity: 1; }
+input[type="email"]::-moz-placeholder { opacity: 1;}
+input[type="tel"]::-webkit-placeholder { opacity: 1;}
+input[type="tel"]::-moz-placeholder { opacity: 1;}
+textarea::-moz-placeholder { opacity: 1;  }
+textarea::-webkit-placeholder { opacity: 1;}
+a:hover{ outline: none !important; text-decoration: none;}
+a:active{ outline: none !important; text-decoration: none;}
+input:focus, textarea:focus{
+  outline: none !important;
+}
+/*font-family: 'Ubuntu';*/
+
+.wrapper{ width: 100%;}
+.panel-default > .panel-heading{ background: none !important; border: none !important; border-radius: 0px !important;}
+.panel-default{ border-radius: 0px !important;}
+.panel-default > .panel-heading + .panel-collapse > .panel-body{ background: none !important; border: none !important; border-radius: 0px !important;}
+a:hover, a:focus{ text-decoration: inherit !important;}
+.container { max-width: 1360px; }
+/*header*/
+.header_sec{ width: 100%; padding:15px 0px; background:#fff;  border-bottom: 1px solid #f2f3f6; position: relative;   -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;  }
+.header_sec.fixed{ position:fixed; left: 0; top: 0; z-index: 999; -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2);box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2); -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; animation: smoothScroll 1s forwards;}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+
+.innheaderSec{ width:100%; position: relative;}
+
+/*menu*/
+.nav_top{ width: 100%; background: none !important; padding: 0px; box-shadow: inherit; margin: 0px; border: none; border-radius: 0px; min-height: inherit; }
+.nav_top .navbar-brand{ width: auto; padding: 0px; margin: 0px; height: auto; }
+.nav_top .navbar-brand img{ max-width: 100%;}
+.nav_top .navbar-collapse{ padding: 0px; border: none; box-shadow: inherit; justify-content: flex-start !important; padding-left: 110px; }
+.menu_sec{ padding: 0px; }
+.menu_sec li{ margin-left:60px; }
+.menu_sec li:first-child{ margin-left: 0px; }
+.menu_sec li a{ padding: 12px 0; font: 400 24px/28px 'Ubuntu'; color: #1a233b; text-decoration: none; display: inline-block;}
+.menu_sec li a:hover{ color:#4848bb !important;}
+.menu_sec li:hover a, .menu_sec li.actv a{ color:#4848bb !important;}
+
+
+.nav_top .navbar-nav > li > .dropdown-menu{background: rgba(000,000,000,0.6); left: 0px; right: inherit;
+  -webkit-border-radius:0px; -moz-border-radius: 0px; -ms-border-radius: 0px; -o-border-radius: 0px; border-radius: 0px;
+  width: 200px; box-shadow: none !important;min-width: inherit; border: none; padding:0px;}
+.nav_top .navbar-nav > li > .dropdown-menu li{ width:100%; display:inline-block; margin:0px !important; position: relative; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.nav_top .navbar-nav > li > .dropdown-menu li a{ font: 400 15px/32px 'Ubuntu'; color: #1a233b !important; padding: 5px 10px; background: none !important; text-align: left; width:100%; display:inline-block; text-transform:inherit !important; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+.nav_top .navbar-nav > li > .dropdown-menu li:hover a{ background: #4848bb !important; color:#fff !important; }  
+.nav_top .navbar-nav > li > .dropdown-menu li:hover .drop_arroww{ transform: rotate(270deg); -moz-transform: rotate(270deg); -webkit-transform: rotate(270deg); -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+  .menu_sec li:hover .drop_arrow, .menu_sec li.actv .drop_arrow{ color:#4848bb !important;}
+/*end menu*/
+
+
+.nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu {border-radius: 0px;
+  width: 250px;
+  box-shadow: none !important;
+  min-width: inherit;
+  border: none;
+  padding: 0px;
+  /* position: absolute; */
+  right: -250px !important;
+  left:inherit !important;
+  top: 0;
+  }
+  .nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu li > a{ background: #fff !important; color: #1a233b !important; font: 400 14px/16px 'Ubuntu'; padding: 10px 10px;}
+  .nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu li:hover a{ background: #4848bb !important; color:#fff !important;}
+  .drop_arrow::after, #navbarDropdown::after{ display: none;}
+.drop_arroww{position: absolute;
+  right: 15px;
+  top: 22px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 25px;}
+
+/*Carousel banner */
+.banner_sec{ width: 100%; position: relative; }
+.banner_sec .carousel-inner{ overflow: inherit;}
+.carousel-item{ width: 100%; text-align: center;}
+.carousel-item img.banpic{ width:100% !important; object-fit:cover; height:450px; opacity: 0;}
+.banner_Itm_Inn{ width: 100%; position: absolute; top: 0px; left: 0px; text-align: left; height: 100%;
+    justify-content: center; align-items: end; display: flex;}
+.banner_Itm_Txt{ width: 100%; padding: 92px 50px 20px 50px; position: relative; background: #ccc; border-top-left-radius: 10px;
+    border-top-right-radius: 10px; background: url(../images/bannerbg.png) no-repeat; background-size: cover; min-height: 450px; }
+.banner_Itm_Txt h1{ color:#fff; font: 400 36px/46px 'Ubuntu'; }
+.banner_Itm_Txt h1 span{ font-size:60px; font-weight: 700; line-height: 66px; text-transform: uppercase; background: #142444; padding: 0px 15px;}
+.banner_Itm_Txt h1 em{ font-weight: 500; font-style: normal;}
+.banner_Itm_Txt p{color:#fff; font: 500 20px/26px 'Ubuntu'; padding-top:20px;}
+.banner_Itm_Txt h6{ display:block;}
+.banner_Itm_Txt h6 a{ color: #fff; font: 500 15px/24px 'Ubuntu'; background: #005de5; padding: 7px 10px; display: inline-block; border-radius: 5px; margin-top: 25px; transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease; }
+.banner_Itm_Txt h6 a:hover{ background: #85c3fc;}
+.menBox{  width: 390px; position: absolute; right: 230px; bottom: 0; z-index: 99; }
+.menBox img{ width:100%; object-fit: contain; opacity: 1;}  
+.whatsAppBot{  width: 100px; position: absolute; right: 140px; top: 60px; transition: .5s ease;
+    -webkit-transition: .5s ease; -moz-transition: .5s ease; animation: zoom-in-zoom-out 1.5s ease; }
+.whatsAppBot img{ width:100%; object-fit: contain; height: inherit; opacity: 1; }
+.banner_sec .carousel-indicators li { width: 20px; height: 20px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.0);  border: 1px solid #fff; margin-left: 5px; margin-right: 5px;}
+.banner_sec .carousel-indicators li.active { width: 20px; height: 20px; border-radius: 50%; background-color: rgba(255, 255, 255, 1);  border: 1px solid #fff;}
+.banner_sec .container-indicators{ position: relative;}
+.banner_sec .container-indicators .carousel-indicators {right: inherit; margin-left: inherit; padding-left: 50px; bottom: 30px;}
+
+
+.trialSec{ width:100%; border-bottom: 1px solid #ccc; padding: 25px 0px;}
+.trialLeft{ width:100%;}
+.trialLeft h3{ color:#000000; font: 400 30px/66px 'Ubuntu'; }
+.trialRight{ width:100%; text-align: right;}
+.trialRight a{ background: #31a888; color:#fff; font: 400 30px/36px 'Ubuntu'; padding: 15px 25px;
+  display: inline-block; border-radius: 5px; transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease;}
+.trialRight a:hover{background: #85c3fc; color: #fff;}
+
+
+
+
+
+    @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.1, 1.1);
+          opacity: 0.5;
+        }
+        100% {
+          transform: scale(1, 1);
+          opacity: 1;
+        }
+      }
+
+.rightDesign{ width:90px; position: absolute; right: 30px; top: 30px;}
+.rightDesign img{width: 100%;}
+.leftDesign{ width:90px; position: absolute; left: 30px; top:30px;}
+.leftDesign img{width: 100%;}
+.height-reduce{ padding-top: 370px;}
+.whatsAppSec{ width:100%; padding: 60px 0px !important; box-shadow: 5px 0px 10px 7px #d8d8d8; background: #f2f4f8;}
+.heading{ width:100%; text-align: center; }
+.heading h2{ color:#142444; font: 400 48px/56px 'Ubuntu'; }
+.heading p{ color:#000000; font: 400 18px/24px 'Ubuntu'; padding-top: 10px;}
+
+
+.whatsAppBoxes{ width:100%; display:inline-block; margin-top: 60px;}
+
+
+
+
+
+
+
+
+.leftWhatsAppSec{ width:100%; display:inline-block;}
+.leftWhatsAppSec h3{ color:#005de5; font: 700 30px/42px 'Ubuntu';}
+.featuresBoxes{ width:100%; display:inline-block; margin-top: 20px;}
+.featuresBoxes .media{padding-bottom: 35px;}
+.featuresBoxes .media .media-left{ width: 70px; height: 70px; border: 2px solid #005de5;
+  border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; color:#005de5; font: 700 24px/32px 'Open Sans', sans-serif; margin-right: 30px; position: relative; background: #fff;}
+.featuresBoxes .media .media-body h5{ color: #000000; font: 500 30px/36px 'Ubuntu';}
+.featuresBoxes .media .media-body p{ color: #000000; font: 400 18px/24px 'Ubuntu'; padding-top: 10px;}
+.featuresBoxes .media .media-left::after{ content:''; width: 3px; height: 50px; position: absolute; left: 50%; bottom: -50px; margin-left: -1.5px; border-right: 3px dashed #005de5;}
+.featuresBoxes .media:last-child .media-left::after{ display: none;}
+.moredetails{ color: #fff; font: 500 15px/24px 'Ubuntu'; background: #005de5; padding: 7px 10px; display: inline-block; border-radius: 5px; margin-top: 10px; transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease; }
+.moredetails:hover{ background: #85c3fc; color: #fff;}
+.whatsAppSec .featuresBoxes .media .media-left{ border: none; background: #fff; width:55px; height: 55px;}
+.whatsAppSec .featuresBoxes .media .media-left img{ width:100%;}
+.whatsAppSec .featuresBoxes .media .media-left::after {height: 60px; bottom: -80px; border-right: 3px solid #000; }
+
+.plansection {
+  width: 100%;
+  padding: 60px 0px 80px !important;
+}
+.innplansectionBox{ width:100%;  margin-top: 60px;}
+.borderstandard {
+  width: 100%;
+  border: 2px solid #006591;
+  border-radius: 15px;
+  margin-left: auto;
+  box-shadow: 2px 4px 8px rgb(140 140 140);
+  position: relative;
+}
+
+h3.plannamestd {
+  color: #006591;
+  padding: 10px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font: 700 36px/52px 'Ubuntu';
+}
+
+.shadowline {
+  height: 16px;
+  padding: 0px;
+  background-color: white;
+  width: 200px;
+  margin: 0 auto;
+  background: url(../images/shadow.png) no-repeat bottom center;
+  margin: 0 auto !important;
+}
+
+.contentdivbuttonstd {
+  position: absolute;
+  bottom: -55px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.buttonclickstd {
+  border: 0;
+  color: white;
+  padding: 10px;
+  font-size: 26px;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 220px;
+height: 65px;
+  cursor: pointer;
+  transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease;
+  overflow: hidden;
+}
+.contentdiv {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.contentdiv ul {
+  width: 100%;
+  min-height: 1060px;
+  padding-bottom: 50px;
+}
+
+.contentdiv ul li {
+  width: 100%;
+  padding: 15px;
+  font: 500 24px/28px 'Ubuntu';
+}
+
+.contentdiv ul li span {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.firstbox .contentdiv ul li span::before {
+  content: "\f0a9";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 25px;
+  color: #7037c1;
+}
+
+.secondbox .contentdiv ul li span::before {
+  content: "\f0a9";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 25px;
+  color: #4573bb;
+}
+
+.thirdbox .contentdiv ul li span::before {
+  content: "\f0a9";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 25px;
+  color: #1fa7b3;
+}
+
+.secondbox .plannamestd {
+  color: #0983a8;
+}
+
+.secondbox {
+  border: 2px solid #0983a8;
+}
+
+.thirdbox {
+  border: 2px solid #269eae;
+}
+
+.thirdbox .plannamestd {
+  color: #269eae;
+}
+
+.firstbox .buttonclickstd {
+  background-image: linear-gradient(180deg, #7037c1, #4e2a84);
+  transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease;
+}
+.firstbox .buttonclickstd:hover {
+  background-image: linear-gradient(180deg, #4e2a84, #7037c1);
+}
+
+.secondbox .buttonclickstd {
+  background-image: linear-gradient(180deg, #00b5e8, #098aad);
+  transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease;
+}
+.secondbox .buttonclickstd:hover {
+  background-image: linear-gradient(180deg, #098aad, #00b5e8);
+}
+
+
+.thirdbox .buttonclickstd {
+  background-image: linear-gradient(180deg, #1fa7b3, #2d838f);
+  transition: .5s ease; -webkit-transition: .5s ease; -moz-transition: .5s ease;
+}
+.thirdbox .buttonclickstd:hover {
+  background-image: linear-gradient(180deg, #2d838f, #1fa7b3);
+}
+
+.featuresection {
+  background: #102c5b;
+  padding: 60px 0px;
+}
+.featuresection .heading h2, .featuresection .heading p{ color:#fff;}
+.titlefeature {
+  color: white;
+  text-align: center;
+  font: 700 30px/42px 'Ubuntu';
+}
+
+
+.featureBoxesPanel{ width:100%; display:inline-block; margin-top: 60px;}
+.featureBoxesPanel .media .media-body h6 { color: #ffffff;  font: 400 30px/36px 'Ubuntu';}
+.featureBoxesPanel .media .media-body p{ color:#fff; }
+.featureBoxesPanel .media .media-left { border: 2px solid #fff; color: #fff; background: #102c5b; position: relative; }
+/* .featureBoxesPanel .media .media-left::after {
+  border-right: 3px dashed #fff;} */
+.featureBoxesPanel .leftWhatsAppSec .media .media-left::before{ content:''; width: 3px; height: 120px; position: absolute; left: 50%; bottom: -120px; margin-left: -1.5px; border-right: 3px dashed #fff;}
+.featureBoxesPanel .row .col-sm-6:last-child .leftWhatsAppSec .media .media-left::before{ display: none;}
+.featureBoxesPanel .row .col-sm-6:nth-last-child(2) .leftWhatsAppSec .media .media-left::before{ display: none;}
+
+
+/******* flow chart ******/
+.workflowSec{ width:100%; padding: 60px 0px; background: url(../images/workflowgb.png)#f5f5f5 no-repeat bottom center; background-repeat: repeat-x;
+  background-size: 60%; box-shadow: 5px 0px 10px 7px #d8d8d8;}
+.workFlowBoxes{ width:100%; margin-top: 60px;}
+
+
+
+:root {
+  --level-1: #8dccad;
+  --level-2: #f5cc7f;
+  --level-3: #7b9fe0;
+  --level-4: #f27c8d;
+  --black: black;
+}
+.rectangle {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* LEVEL-1 STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.level-1 {
+  width: 400px;
+  margin: 0 auto 80px;
+  background: #fff;
+  border: 3px solid #294989;
+  border-radius: 15px;
+  text-align: center;
+  font: 400 30px/36px 'Ubuntu';
+  color:#000;
+}
+
+.level-1::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 80px;
+  background: var(--black);
+}
+
+
+/* LEVEL-2 STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.level-2-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  padding: 0px;
+}
+
+.level-2-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background: var(--black);
+}
+
+.level-2-wrapper::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: calc(100% + 20px);
+  height: 2px;
+  background: var(--black);
+}
+
+.level-2-wrapper li {
+  position: relative;
+  margin-top: 80px;
+}
+
+.level-2-wrapper > li::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 80px;
+  background: var(--black);
+}
+.level-2-wrapper li:last-child .level-2::before{ display:none;}
+
+.level-2 {
+  width: 400px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border: 3px solid #294989;
+  border-radius: 15px;
+  text-align: center;
+  font: 400 30px/36px 'Ubuntu';
+  color:#000;
+}
+
+.level-2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 40px;
+  background: var(--black);
+}
+
+.level-2::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-100%, -50%);
+  width: 20px;
+  height: 2px;
+  background: var(--black);
+}
+
+.level-3-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0px;
+
+}
+
+.level-3-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(25% - 5px);
+  width: calc(50% + 10px);
+  height: 2px;
+  background: var(--black);
+}
+
+.level-3-wrapper > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 2px;
+  height: 80px;
+  background: var(--black);
+}
+
+.level-3 {
+margin: 0 auto;
+background: #fff;
+border: 3px solid #294989;
+border-radius: 15px;
+text-align: center;
+font: 400 30px/36px 'Ubuntu';
+color: #000;
+}
+
+/*footer start*/
+.footerSec{width: 100%; background-color: #ebebeb; padding: 50px 0; }
+.footerInn{width: 100%;position: relative;}
+.footerBox{width: 100%;  }
+.footerBox p{font: 400 18px/28px 'Ubuntu'; color: #5f5f5f; padding-bottom: 15px; }
+.footerBox li{font: 400 18px/28px 'Ubuntu'; color: #5f5f5f; padding: 5px 0px; }
+.footerBox ul li a {color: #5f5f5f; display:inline-block; position: relative;padding-left: 20px;-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;  transition: all 0.5s ease-in-out;}
+.footerBox ul li a:after{position: absolute;content: ''; top: 50%;transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);
+ left: 0; background-color: #5f5f5f; width: 8px; height: 8px; border-radius: 50%;-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;  transition: all 0.5s ease-in-out;}
+.footerBox ul li a:hover{color: #4848bb ;-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;  transition: all 0.5s ease-in-out;}
+.footerBox ul li a:hover:after{background-color: #4848bb ;-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;  transition: all 0.5s ease-in-out;}
+.footerBox.footInfo ul li{padding-left: 40px; position: relative; cursor: none; pointer-events: none;  -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10 and IE 11 */ user-select: none; /* Standard syntax */ }
+.footerBox.footInfo ul li::after { width: 100%; height: 100%; content: ''; position: absolute; left: 0;
+  top: 0; background: transparent; }
+.footerBox.footInfo ul li strong{ display:block;}
+.footerBox.footInfo ul li a{padding-left: 0;}
+.footerBox.footInfo ul li a:after{display: none;}
+/*footer bottom*/
+.footerBottom{width: 100%; padding: 45px 0px;}
+.footerBtext{width: 100%; text-align: center;}
+.footerBtext p{font: 400 18px/28px 'Ubuntu'; color: #3e3e3e; margin-top: 5px;}
+.footerBtext p a{color: #3e3e3e;-moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out;  -webkit-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;  transition: all 0.5s ease-in-out;}
+.footerBtext b{font: 500 20px/26px 'Ubuntu'; color: #25344b; display: block;}
+.footerBtext b em{font-style: normal; color: #4848bb;}
+/*footer end*/
+
+
+/*************pricing*************/
+
+
+.innerBanner .banner_Itm_Inn{ position: relative; background: #294989;}
+.innerBanner .banner_Itm_Inn h1 b{font-size: 19px;}
+.pricingsection{ width:100%; padding: 60px 0px !important;}
+.innpricingsection{ width:100%; display:inline-block; margin-top: 60px;}
+.innpricingsection .card .card-header{ background: #294989; background-image: linear-gradient(90deg, #294989, #5f91d6);}
+.innpricingsection .card .card-header h5{ text-align: center; font: 700 32px/48px 'Ubuntu'; color: #fff; margin: 0px;}
+.pricingsection h6{ color: #294989; font: 500 28px/32px 'Ubuntu'; margin-bottom: 0px; }
+.innpricingsection .card .card-body ul li{ position: relative;}
+.innpricingsection .card .card-body ul li span{ padding-left: 30px; display: inline-block;}
+.innpricingsection .card .card-body ul li span::before {
+  content: "\f0a9";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 25px;
+  color: #294989;
+}
+.innpricingsection .card .card-body ul li { font: 400 22px/28px 'Ubuntu'; color: #000000; }
+.afterpricingsection{ width:100%; text-align: center; padding: 15px 0px;  margin-top: 60px;}
+.afterpricingsection p{  color: #294989; font: 500 22px/32px 'Ubuntu';}
+
+/* start pricing button animation */
+.buttonclickstd:link,
+.buttonclickstd:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 22px/28px 'Ubuntu';
+  text-decoration: none;
+  border-color:#294989;
+  background-color: #294989;
+  background-image: linear-gradient(90deg, #294989, #5f91d6);
+  padding: 1rem 2.5rem;
+  margin-right: 13px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.buttonclickstd::before {
+  background: #fff;
+  content: "";
+  height: 155px;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.buttonclickstd::after {
+  background: #fff;
+  content: "";
+  height: 20rem;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(30deg);
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 8rem;
+}
+.buttonclickstd::before {
+  left: -50%;
+}
+.buttonclickstd::after {
+  left: -100%;
+}
+.buttonclickstd:hover,
+.buttonclickstd:active {
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.buttonclickstd:hover::before {
+  left: 120%;
+  opacity: 0.4s;
+}
+.buttonclickstd:hover::after {
+  left: 200%;
+  opacity: 0.5;
+}
+.buttonclickstd span {
+  z-index: 20;
+}
+/* end pricing button animation */
+  
+/* b2b */
+.newsec{ width:100%; display:inline-block; padding: 60px 0px;}
+.innStepingSec{ width:100%; display:inline-block;}
+.innStepingSec .media{ padding: 15px 0px;  }
+.innStepingSec .media .media-left{ width:70px; height: 70px; border-radius: 50%; background: #142444; margin-right: 15px; display: flex; justify-content: center; align-items: center; font-size: 26px; color: #fff; position: relative;}
+.innStepingSec .media .media-body h5{ color: #000000; font: 500 26px/36px 'Ubuntu';}
+.innStepingSec .media .media-body p{ color: #000000; font: 400 18px/24px 'Ubuntu'; padding-top: 7px;}
+.innStepingSec .media .media-left::after{ width:2px; height: 60px; content:''; background: #142444; position: absolute; left:50%; margin-left: -1px; bottom: -60px;}
+.innStepingSec .row .col-sm-9:last-child .media .media-left::after{ display: none !important;}
+.innStepingSec .row .col-sm-9:nth-child(odd) .media .media-left{ background: #5f91d6;}
+
+.zigzagSec{ padding: 0px !important;}
+.zigzagSecPanel{ width:100%; padding: 30px 0px;
+  display: inline-block;}
+.zigzagPic{ width:100%;}
+.zigzagPic img{ width:100%;}
+.zigzagContent{ width:100%;}
+.zigzagContent h3{ color: #000000; font: 500 26px/36px 'Ubuntu';}
+.zigzagContent ul{ width:100%; display:inline-block; padding-top: 20px;}
+.zigzagContent ul li{ width:100%; display:inline-block; color: #000000; font: 400 18px/24px 'Ubuntu'; padding: 7.5px 0px;}
+.zigzagSecPanel .row{ padding: 15px 0px;}
+.zigzagSecPanel:nth-child(odd){ background: #f3f3f3;}
+.zigzagSecPanel:nth-child(odd) .row{flex-direction: row-reverse;}
+.zigzagContent ul li span{ position: relative; padding-left: 35px;
+  display: inline-block;}
+.zigzagContent ul li span::before {
+  content: "\f064";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 25px;
+  color: #3c5bb4;
+}
+
+.leftcontent {
+  text-align: left;
+  padding-top: 0px !important;
+  padding-bottom: 15px;
+}
+.leftcontent ul{
+  padding-top: 0px !important;
+}
+.agreepolicy {
+  font-size: 14px;
+}
+.privacyhead h5 {
+  font-size: 16px;
+}
+.getStartedSec{ background: #fff; position: relative; padding-bottom: 30px; }
+.getStartedSec::after{ width:100%; height: 40%; content: ''; position: absolute; left: 0; top:0; background: #294989;}
+.getStartedBox{ width:100%; box-shadow: 0px 0px 5px 0px #ccc; min-height: 400px; border-radius: 15px; position: relative; z-index: 99; background: #fff; text-align: center;  padding: 35px; display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;}
+.getStartedBox h2{ color: #000000; font: 500 30px/42px 'Ubuntu';}
+.getStartedBox ul{ width:100%; padding-top: 10px;}
+.getStartedBox ul li{ display:inline-block; padding: 0px 10px; color: #000000; font: 400 18px/24px 'Ubuntu';}
+.getStartedBox h3{ color: #000000; font: 500 24px/32px 'Ubuntu'; margin-top: 30px;}
+.getStartedBox .contact{ margin-top: 15px; }
+/* start pricing button animation */
+.getStartedBox a.contact:link,
+.getStartedBox a.contact:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 22px/28px 'Ubuntu';
+  text-decoration: none;
+  border-color:#294989;
+  background-color: #294989;
+  background-image: linear-gradient(90deg, #294989, #5f91d6);
+  padding: 1rem 2.5rem;
+  margin-right: 0px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.getStartedBox a.contact::before {
+  background: #fff;
+  content: "";
+  height: 155px;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.getStartedBox a.contact::after {
+  background: #fff;
+  content: "";
+  height: 20rem;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(30deg);
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 8rem;
+}
+.getStartedBox a.contact::before {
+  left: -50%;
+}
+.getStartedBox a.contact::after {
+  left: -100%;
+}
+.getStartedBox a.contact:hover,
+.getStartedBox a.contact:active {
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.getStartedBox a.contact:hover::before {
+  left: 120%;
+  opacity: 0.4s;
+}
+.getStartedBox a.contact:hover::after {
+  left: 200%;
+  opacity: 0.5;
+}
+.getStartedBox a.contact span {
+  z-index: 20;
+}
+/* end pricing button animation */
+
+
+
+
+.trialFormSec{ padding: 0px !important;}
+.trialFormSec .zigzagSecPanel{ background: #fff !important;}
+.trialFormSecHeading{ width:100%; display:inline-block;}
+.trialFormSecHeading h3{color: #000000; font: 500 20px/34px 'Ubuntu';}
+.trialFormSecHeading p{color: #000000; font: 400 14px/18px 'Ubuntu'; padding-top: 5px;}
+.trialFormSec .zigzagContent ul{ padding-top: 0px;}
+.frmDetailsGrp{ width:100%; display:inline-block; }
+.frmDetailsGrp .row{ padding: 0px !important; flex-direction: inherit !important;}
+.frmDetailsGrp p{ color: #1a233b; font: 400 16px/20px 'Ubuntu'; margin: 10px 0px;}
+.frmBox{ width:100%; display:inline-block;}
+.frmBox label{color: #000000; font: 400 14px/20px 'Ubuntu'; width:100%; display:inline-block;}
+.frmBox input[type=text], .frmBox input[type=email], .frmBox input[type=range], .frmBox textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #F4F6FC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font: 400 14px/20px 'Ubuntu';
+  color:#495057;
+  background: #F4F6FC;
+}
+.frmBox input[type=text]::placeholder, .frmBox input[type=email]::placeholder, .frmBox input[type=range]::placeholder{ color:#828990;}
+.phone-input-box{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.phone-input-box .phonenumber {
+  font-size: 14px;
+  background: #F4F6FC;
+}
+.phone-input-box .selected-flag.input-group-text {
+  background: #F4F6FC; border: 1px solid #F4F6FC;
+}
+
+.frmBox input[type="range"], .frmBox select, .frmBox summary, .frmBox textarea {
+touch-action: manipulation;
+width: 100%;
+padding: 12px;
+border: 1px solid #F4F6FC;
+border-radius: 4px;
+box-sizing: border-box;
+/* margin-top: 6px; */
+margin-bottom: 6px;
+font: 400 14px/20px 'Ubuntu';
+color:#495057;
+border-color: #d7d7d7;
+border: 1px solid #ccc;
+/* padding-left: 45px; */
+}
+.frmBox > .form-control{
+  padding: 12px;
+}
+
+::-webkit-input-placeholder {
+    color: grey;
+}
+:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+    color: grey;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: grey;  
+}
+:-ms-input-placeholder {  
+    color: grey;  
+}
+
+.frmBox input [type=tel], select, summary, textarea {
+touch-action: manipulation;
+width: 100%;
+padding: 12px;
+border: 1px solid #F4F6FC;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 6px;
+font: 400 14px/20px 'Ubuntu';
+color:#495057;
+border-color: #d7d7d7;
+border: 1px solid #ccc;
+}
+
+.frmBox label span {
+  color: red;
+}
+.phonenumber {padding: 12px; border: 1px solid #F4F6FC; border-radius: 4px;}
+.phonenumber:focus { border: 1px solid #F4F6FC; }
+.absfrmBox {
+  position: relative;
+}
+
+.absfrmBox p.phone-label {
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+}
+ .absfrmBox p.email-label {
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+}
+ .absfrmBox .input-group-text {
+  background: #fff;
+}
+
+.frmBox p {
+  margin: 0 !important;
+}
+
+/* .absfrmBox p.phone-label {
+  position: absolute;
+  left: 0;
+  bottom: -48px;
+  background: #111944;
+  color: #fff !important;
+  padding: 18px;
+  border-radius: 8px;
+  z-index: 9;
+} */
+
+.sbmt{ display:flex; justify-content: center; margin-top: 10px;}
+.sbmt input[type=submit] {
+  background-color: #3c5bb4;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  font: 500 18px/24px 'Ubuntu';
+}
+/* ************select*********** */
+.frmBox select {
+  appearance: none;
+  outline: none;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  background-image: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #F4F6FC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font: 400 14px/20px 'Ubuntu';
+ color: #495057;
+  /* color:#828990; */
+  background: #F4F6FC;
+}
+/* Remove IE arrow */
+.frmBox select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 7px;
+right: 3px;
+padding: 12px;
+  background-color: #F4F6FC;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #3c5bb4;
+}
+
+/* .frmBox select{
+  color: #828990;
+} */
+.frmBox select option:not(:first-of-type) {
+  color: #000000;
+  padding: 10px;
+}
+
+
+
+.whywaliner{}
+.whywalinerBoxes{ width:100%; display:inline-block; margin-top: 30px;}
+.whywalinerBoxes .zigzagContent{ width: 100%;
+  display: flex;
+  min-height: 180px;
+  border: 2px solid #3c5bb4;
+  background: #fff;
+  padding: 25px;
+  border-radius: 7px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;transition: all 0.3s;
+}
+  .whywalinerBoxes .zigzagContent:hover{ box-shadow: 0px 0px 5px 0px #142444;}
+.whywalinerBoxes .zigzagContent h3{ color: #000000; font: 400 24px/28px 'Ubuntu'; padding-bottom: 15px; }
+.whywalinerBoxes .zigzagContent p{ color: #000000; font: 400 14px/18px 'Ubuntu'; }
+.featuresBoxes .row{ flex-direction: inherit !important;}
+.featuresBoxes .card { margin-bottom: 30px; padding-top: 20px; border-bottom: 5px solid #3c5bb4; position: relative;}
+.featuresBoxes .card::after{ width:0%; content:''; height: 5px; background: transparent; position: absolute; left:0; bottom: -5px; z-index: 9; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;transition: all 0.3s;}
+.featuresBoxes .card span.icon{font-size: 40px;} 
+.featuresBoxes .card:hover::after{ width:100%; background: #31a888; }
+.featuresBoxes .card .card-body{ min-height: 130px;}
+.featuresBoxes .card .card-body h5{ color: #000000; font: 500 20px/28px 'Ubuntu';}
+.featuresBoxes .card .card-body p{ color: #000000; font: 400 14px/18px 'Ubuntu';}
+
+.autoFeatures .featuresBoxes .card .card-body { min-height: 235px; }
+.autoFeatures .featuresBoxes .row .col-md-4:nth-child(2) .card { transform: scale(1.1) }
+.autoFeatures .featuresBoxes .row .col-md-4:nth-child(2) .card::after{ width:100%; background: #31a888; }
+.newautoFeature .featuresBoxes .card .card-body h5{ font-size: 18px; line-height: 22px;}
+.whatsAppChatBoxes {}
+.featurePic{ width:100%; padding: 10px;}
+.featurePic img{ width:100%; height: 150px; object-fit: cover;}
+.whatsAppChatBoxes .featuresBoxes .card{ padding: 0px;}
+.whatsAppChatBoxes .featuresBoxes .card .card-body { min-height: 250px; text-align: left; padding: 10px 15px; }
+.whatsAppChatBoxes .featuresBoxes .card .card-body h5 { font-size: 18px; line-height: 24px;}
+
+
+.notificationLibTemp .featuresBoxes .card .card-body h5 { font-size:16px; line-height: 22px; }
+.notificationLibTemp .featuresBoxes .card .card-body { min-height: 150px; }
+
+
+
+.whatsAppChatBoxes.whywalinerSec .featuresBoxes .card .card-body { min-height: 150px; }
+.faqSec .featuresBoxes .card { margin-bottom: 0; padding-top: 0; border-bottom: 2px solid #3c5bb4; border-radius: 0px; border: none;}
+.faqSec .featuresBoxes .card .card-header{padding: 0px; background: #fff; border-radius: 0px;}
+.faqSec .featuresBoxes .card .card-header h5 button{color: #000000;
+  font: 500 20px/28px 'Ubuntu'; width:100%; text-align: left; text-decoration: none; padding: 15px;}
+.faqSec .featuresBoxes .card::after { height: 2px; bottom: -2px; }
+.faqSec .featuresBoxes .card .card-body{ min-height: inherit !important;}
+.faqSec .featuresBoxes .card .card-body p, .faqSec .featuresBoxes .card .card-body ul li{color: #000000;
+  font: 400 14px/20px 'Ubuntu'; padding: 5px 0px;}
+
+/* #contactModal.modal{justify-content: center; align-items: center;
+  display: flex; } */
+
+.modal .modal-dialog { max-width: 700px; width: 700px; }
+.modal .modal-content .modal-header{ padding: 15px; justify-content: space-between;
+  align-items: center;}
+.modal .modal-content .modal-header h4{ color: #000000; font: 500 20px/28px 'Ubuntu';}
+.modal .modal-content .close{width: 40px;
+  height: 40px;
+  color: #666;
+  text-shadow: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  position: absolute;
+  text-shadow: inherit;
+  z-index: 1;
+  right: 0;
+  opacity: 1;
+  top: 0;}
+.modal .modal-content .modal-header .close:focus{
+  outline: none;
+}
+.modal .frmBox textarea{ resize: none; height: 100px;}
+.missionSec .zigzagPic {margin-top: 10px; }
+
+.healthPic1 img{ height: 300px; object-fit: contain;}
+.healthPic2 { position: relative; min-height: 350px; }
+.healthPic2 img {
+  height: 410px;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+}
+.healthPic3 img { height: 350px; object-fit: contain; }
+.healthPic4 img { height: 400px; object-fit: contain; }
+.beautypic5 img { height: 400px; object-fit: contain; }
+.beautypic1 img {height: 360px; object-fit: cover; object-position: left 5px; }
+.beautypic2 img {height: 300px; object-fit: contain;  }
+.beautyFeatureSec .featuresBoxes .card { margin-bottom: 0px; }
+
+/*==========================================*/
+.zigzagContentInner{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+ 
+.zigzagPicInner{
+  text-align: center;;
+}
+.zigzagPicInner img{
+  height: 250px;
+  width: auto;
+}
+.conversations_img_inner{
+  text-align: center;;
+}
+.conversations_img_inner img{
+  height: 300px;
+  width: auto;
+}
+.information_img_inner{
+  text-align: center;;
+}
+.information_img_inner img{
+  height: 200px;
+  width: auto;
+}
+.engagement_sustained__bookings_img_inner{
+ text-align: center;
+}
+.engagement_sustained__bookings_img_inner img{
+  height: 450px;
+  width: auto;
+}
+.homedecor_inner img{height: 400px;object-fit: contain;}
+.homedecor_img_inner img{height: 300px;object-fit: contain;}
+.zigzagPicWhatsappInner{text-align: center;}
+.zigzagPicWhatsappInner img{ height: 250px;  width: 100%; object-fit: contain; }
+.whatsapp-chat-widget-boxes .featurePic img { height: 190px; }
+.homedecor_inner img{height: 400px;object-fit: contain;}
+.homedecor_img_inner img{height: 300px;object-fit: contain;}
+.dashboardImgInner img{height: 260px;object-fit: contain;}
+.realested-box-section.zigzagSecPanel{
+  background-color: #fff;
+}
+.realested-box-section.zigzagSecPanel .card {
+  background: #f3f3f3;
+  min-height: 375px;
+}
+
+/*18-08-23*/
+.menu_sec .dropdown .dropdown-toggle::after { display:none;}
+
+
+.tabSecBoxes{ width:100%; margin-top: 30px;}
+.tabSecBoxes .row{flex-direction: inherit !important;}
+.tabSecBoxes .nav-tabs li{  display: inline-block;}
+.tabSecBoxes .nav-tabs li:last-child{ margin-right: 0px;}
+.tabSecBoxes .nav-tabs li a{ background: #5f91d6; color:#fff; border-color: #5f91d6; border-radius: 0.25rem;}
+.tabSecBoxes .nav-tabs li a.active{ background: #3c5bb4; color:#fff; border-color: #3c5bb4;}
+.tabSecBoxes .nav-tabs li:hover a{ background: #3c5bb4; color:#fff; border-color: #3c5bb4;}
+.tabSecBoxes .nav-tabs li a:focus, .tabSecBoxes .nav-tabs li a:hover { border: 1px solid transparent; }
+.tabSecBoxes .nav-tabs { border: none; text-align: center; }
+.tabSecBoxes .card{ padding: 10px;
+  border-radius: 15px; margin: 15px 0px;}
+.tabSecBoxes .card .card-img-top{width: auto;
+  border-radius: 7px;
+  max-width: 100px;
+  object-fit: contain;}
+.tabSecBoxes .card .card-body{ padding: 0px; padding-top: 10px; min-height: 150px; display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;}
+.tabSecBoxes .card .card-body h4{ color: #000000; font: 500 16px/22px 'Ubuntu'; margin: 0px;}
+.tabSecBoxes .card .card-body h5{ color: #333; font: 400 14px/20px 'Ubuntu'; margin: 0px;}
+.tabSecBoxes .card .card-body p{ color: #000;
+  font: 400 14px/18px 'Ubuntu';
+  margin: 0px;
+  padding-top: 5px;}
+.whiteBG{ background: #fff !important;}
+.zigzagSecPanel.grayBG{background: #f3f3f3 !important;}
+
+
+.frmBox .country-list{ top: 100% !important; transform: inherit !important; max-height: 200px !important; background-color: #fefefe !important; box-shadow: inherit !important; border: 1px solid rgb(0 0 0 / 12%) !important;  width: 100% !important; font-size: 14px !important; white-space: inherit !important; line-height: 16px !important; }
+.frmBox .country-name {
+  color: #828990 !important;
+}
+.frmBox .dial-code {
+  color: #495057 !important;
+}
+.frmBox .country.highlight {
+  background-color: #3c5bb4 !important;
+}
+.frmBox .country.highlight .country-name, .country.highlight .dial-code{ color: #fff !important;}
+
+
+.sitemap{
+  width: 100%;
+display: inline-block;
+padding: 15px;
+column-count: 2;
+column-gap: 50px;
+
+}
+.sitemap li{  color:#000000; font: 400 14px/18px 'Ubuntu'; width: 100%; list-style-type: disclosure-closed;}
+.sitemap li a{color:#000000; padding: 7px 10px; width: 100%;
+  display: inline-block; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;transition: all 0.3s; border-bottom: 1px solid #ccc;}
+.sitemap li a:hover{ color:#3c5bb4;}
+.sitemap li ul{ width:100%; display:inline-block; padding-left: 15px;}
+.sitemap li ul li{ width:100%; list-style-type: square; }
+.sitemap li ul.sub li{ list-style-type: circle;}
+.sitemap li ul li a.sub-main{ padding-left: 15px;}
+
+/*contact us*/
+.contactUssection .innplansectionBox{
+  margin-top: 0;
+}
+.contactUssection .innplansectionBox .heading{ text-align: left;
+  min-height: inherit;
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+  box-shadow: inherit;
+  display: inline-block;}
+.contactUssection .innplansectionBox .heading h2{font-size: 24px; line-height: 30px;
+  font-weight: 500;}
+.leftContactSec{ width:100%; display: inline-block;}
+.leftContactSec ul{ width: 100%; display: inline-block; }
+.leftContactSec ul li{width: 100%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 15px;
+  padding: 15px;
+  cursor: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.leftContactSec ul li::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+}
+  .leftContactSec ul li:last-child{ margin: 0px;}
+.leftContactSec ul li h6{ color:#000000; font: 500 18px/26px 'Ubuntu'; margin-bottom: 10px;}
+.leftContactSec ul li span{ width: 60px;
+  height: 60px;
+  background: #5c8dd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 50%;
+  color: #fff; margin-bottom: 10px;}
+  .leftContactSec ul li p{ color:#000000; font: 400 14px/18px 'Ubuntu'; }
+  .leftContactSec ul li p a{color:#000000;}
+.contactPicBox{ width:100%; display: inline-block;}
+.contactPicBox img{ width: 100%;}
+
+
+@media only screen and (max-width: 480px){
+  .engagement_sustained__bookings_img_inner img{
+    height: 300px;
+  }
+  .conversations_img_inner img{
+    height: 250px;
+    width: auto;
+  }
+  .information_img_inner img{
+    height: 150px;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 5000px)
+
+{
+
+.nav_top .dropdown .dropdown-menu { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;transition: all 0.3s; max-height: 0; display: block; opacity: 0;visibility: hidden;  margin:0px; border: none; border-bottom: 2px solid #ccc; background:#fff !important; width: 150px; padding: 0px;
+   border-radius: 0; left: 0; right: inherit; padding: 5px 8px 8px; box-shadow: inherit; }
+.nav_top .dropdown:hover .dropdown-menu { max-height: 300px;opacity: 1; visibility: visible; }
+
+.nav_top .dropdown .dropdown-menu li .dropdown-menu{ -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;transition: all 0.3s; max-height: 0; display: block; opacity: 0;visibility: hidden;  margin:0px; border: none; border-bottom: 2px solid #ccc; background:#fff !important; width: 150px; padding: 0px;
+ border-radius: 0; left:inherit; right: -150px; top:0; padding: 5px 8px 8px; box-shadow: inherit; }
+.nav_top .dropdown .dropdown-menu li:hover .dropdown-menu{ max-height: 300px;opacity: 1; visibility: visible; } 
+
+
+}
+
+
+@media (min-width: 1900px) and (max-width: 2299px) {
+
+  .container {  max-width: 1280px; }
+  .menu_sec li { margin-left: 50px;  }
+  .menu_sec li a { font-size:22px;}
+  .nav_top .navbar-brand {  width: 250px; }
+  .menBox {  width: 375px; right: 325px; }
+  .banner_Itm_Txt h1 {font-size: 32px; line-height: 42px; }
+  .banner_Itm_Txt h1 span { font-size: 52px; line-height: 58px; }
+  .trialLeft h3 { font-size:26px; line-height: 60px;}
+  .trialRight a {font-size:26px; line-height: 30px;}
+  .heading h2 { font-size:42px; line-height: 50px; }
+  .featuresBoxes .media .media-body h5 { font-size:24px; line-height: 32px; }
+  .featureBoxesPanel .media .media-body h6{ font-size:24px; line-height: 32px; }
+  h3.plannamestd{font-size:32px; line-height: 48px;}
+  .contentdiv ul { min-height: 985px; }
+  .contentdiv ul li { font-size:20px; line-height: 26px; padding: 10px 15px;}
+  .buttonclickstd { width: 200px; font-size: 22px; }
+  /* .featureBoxesPanel .leftWhatsAppSec .media .media-left::before {bottom: -102px; } */
+  .contentdivbuttonstd { bottom: -60px; }
+  .level-1, .level-2{ width: 350px; margin: 0 auto 60px; font-size:26px; line-height: 30px;}
+  .level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 60px; }
+  .level-2-wrapper li { margin-top: 60px;   }
+  .level-3 {font-size:26px; line-height: 30px;}
+  .footerBox p { font-size: 18px; line-height: 28px;}
+  .footerBox li {font-size: 18px; line-height: 28px;}
+  .footerBtext p {font-size: 18px; line-height: 28px;}
+  /*************pricing*************/
+  .pricingsection h6 { font-size:22px; line-height: 28px;}
+
+  /* b2b */
+  .innStepingSec .media .media-body h5 { font-size: 24px; line-height: 32px;}
+  .zigzagContent h3 { font-size: 24px; line-height: 32px;}
+  .getStartedBox a.contact:link, .getStartedBox a.contact:visited{font-size: 20px; line-height: 26px;}
+  .healthPic2 img { height: 500px; bottom: -150px; }
+
+}
+@media (min-width: 1600px) and (max-width: 1899px) {
+
+  .container {  max-width: 1240px; }
+  .menu_sec li { margin-left: 45px;  }
+  .menu_sec li a { font-size:20px;}
+  .nav_top .navbar-brand {  width: 230px; }
+  .menBox {  width: 345px; right: 260px; }
+  .banner_Itm_Txt h1 {font-size: 28px; line-height: 36px; }
+  .banner_Itm_Txt h1 span { font-size: 48px; line-height: 54px;   }
+  .trialLeft h3 { font-size:22px; line-height: 56px;}
+  .trialRight a {font-size:22px; line-height: 26px;}
+  .heading h2 { font-size:38px; line-height: 46px; }
+  .heading p {font-size:17px; line-height: 22px; }
+  .featuresBoxes .media .media-body h5 { font-size:22px; line-height: 28px; }
+  .featureBoxesPanel .media .media-body h6{ font-size:22px; line-height: 28px; }
+  h3.plannamestd{font-size: 28px;
+    line-height: 42px;}
+  .contentdiv ul { min-height: 825px; }
+  .contentdiv ul li { font-size: 18px;
+    line-height: 22px; padding: 10px 15px;}
+  .buttonclickstd {   width: 180px; font-size: 20px; height: 60px; }
+  .banner_Itm_Txt { padding: 70px 50px 20px 50px; min-height: 400px;   }
+  .carousel-item img.banpic { height: 400px; }
+  .featuresBoxes .media .media-body p { font-size:16px; line-height: 22px;}
+  .chat-container {  height: 440px; }
+  .chat {  padding: 12px 17px 25px 17px; }
+  .contentdiv ul li span {padding-left: 35px;   }
+  .firstbox .contentdiv ul li span::before, .secondbox .contentdiv ul li span::before, .thirdbox .contentdiv ul li span::before { font-size: 22px; }
+  /* .featureBoxesPanel .leftWhatsAppSec .media .media-left::before {bottom: -95px; } */
+  .contentdivbuttonstd { bottom: -55px; }
+  .featuresBoxes .media { padding-bottom: 25px;   }
+  .whatsAppSec .featuresBoxes .media .media-left::after { height: 50px; bottom: -62px; }
+  .level-1, .level-2{ width: 300px; margin: 0 auto 50px; font-size:24px; line-height: 28px;}
+  .level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 50px; }
+  .level-2-wrapper li { margin-top: 50px;   }
+  .level-3 {font-size:24px; line-height: 28px;}
+ .footerBox p, .footerBox li, .footerBtext p { font-size: 16px; line-height: 26px;}
+ .footerBox li { padding: 3px 0px;}
+   /*************pricing*************/
+   .pricingsection h6 { font-size:22px; line-height: 28px;}
+  
+  /* b2b */
+  .innStepingSec .media .media-body h5 { font-size: 20px; line-height: 30px;}
+  .zigzagContent h3 { font-size: 19px; line-height: 25px;}
+  .innStepingSec .media .media-body p { font-size: 16px; line-height: 22px;}
+  .zigzagContent ul li { font-size: 16px; line-height: 22px;}
+  .getStartedBox h2 {font-size: 28px; line-height: 40px;}
+  .getStartedBox h3 {font-size: 22px; line-height: 30px;}
+  .getStartedBox a.contact:link, .getStartedBox a.contact:visited{font-size: 20px; line-height: 26px;}
+  .healthPic2 img { height: 450px; bottom: -82px; }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+  /* .container {  max-width: 1140px; } */
+  .container {  max-width: 100% !important; }
+
+  .menu_sec li { margin-left: 40px;  }
+  .menu_sec li a { font-size:18px;}
+  .nav_top .navbar-brand {  width: 220px; }
+  .menBox {  width: 320px; }
+  .banner_Itm_Txt h1 {font-size: 28px; line-height: 36px; }
+  .banner_Itm_Txt h1 span { font-size: 48px; line-height: 52px;   }
+  .trialLeft h3 { font-size:20px; line-height: 50px;}
+  .trialRight a {font-size:20px; line-height: 26px; padding: 12px 20px;}
+  .heading h2 { font-size:34px; line-height: 40px; }
+  .heading p {font-size:16px; line-height: 20px; padding-top: 6px; }
+  .featuresBoxes .media .media-body h5 {font-size: 19px; line-height: 22px; }
+  .featureBoxesPanel .media .media-body h6{ font-size: 20px; line-height: 24px; }
+  h3.plannamestd{font-size: 24px; line-height: 36px;}
+  .contentdiv ul { min-height: 780px; }
+  .contentdiv ul li { font-size: 16px; line-height: 20px; padding: 10px 10px;}
+  .buttonclickstd {   width: 170px; font-size: 18px; height: 55px; }
+  .banner_Itm_Txt { padding: 70px 50px 20px 50px; min-height: 390px;   }
+  .carousel-item img.banpic { height: 390px; }
+  .featuresBoxes .media .media-body p { font-size: 15px; line-height: 20px; padding-top: 7px;}
+  .featuresBoxes .media { padding-bottom: 15px;   }
+  .chat-container {  height: 440px; }
+  .chat {  padding: 12px 17px 25px 17px; }
+  .contentdiv ul li span {padding-left: 35px;   }
+  .firstbox .contentdiv ul li span::before, .secondbox .contentdiv ul li span::before, .thirdbox .contentdiv ul li span::before { font-size: 22px; }
+  .header_sec { padding: 10px 0px; }
+  .trialSec { padding: 15px 0px; }
+  .whatsAppSec {padding: 50px 0px !important; }
+  .plansection { padding: 50px 0px !important; }
+  .innplansectionBox, .whatsAppBoxes, .featureBoxesPanel { margin-top: 50px;   }
+  .whatsAppSec .featuresBoxes .media .media-left::after { height: 50px; bottom: -60px; }
+  .whatsAppSec .featuresBoxes .media { padding-bottom: 35px;   }
+  
+  /* .featureBoxesPanel .leftWhatsAppSec .media .media-left::before { height: 50px; bottom: -67px;} */
+  .level-1, .level-2{ width: 300px; margin: 0 auto 40px; font-size:22px; line-height: 26px;}
+  .level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 40px; }
+  .level-2-wrapper li { margin-top: 40px;   }
+  .level-3 {font-size:22px; line-height: 26px;}
+  .workflowSec { padding: 50px 0px; }
+  .workFlowBoxes { margin-top: 50px;   }
+  .footerBox p, .footerBox li, .footerBtext p { font-size: 15px; line-height: 22px;}
+ .footerBox li { padding: 5px 0px;}
+ .footerBtext b {font-size: 18px; line-height: 24px;}
+ .featuresection { padding: 50px 0px;}
+ .featureBoxesPanel { margin-top: 40px; }
+  /*************pricing*************/
+  .pricingsection h6 { font-size:18px; line-height: 22px;}
+  .afterpricingsection p { font-size:18px; line-height: 24px;}
+    /* b2b */
+    .innStepingSec .media .media-body h5 { font-size: 20px; line-height: 30px;}
+    .zigzagContent h3 { font-size: 18px; line-height: 24px;}
+    .innStepingSec .media .media-body p { font-size: 16px; line-height: 22px;}
+    .zigzagContent ul li { font-size: 14px; line-height: 20px;}
+    .zigzagContent ul { padding-top: 15px; }
+    .newsec { padding: 40px 0px; }
+    .getStartedBox ul li {font-size: 15px; line-height: 22px;}
+    .getStartedBox h2 {font-size: 26px; line-height: 36px;}
+    .getStartedBox h3 {font-size: 22px; line-height: 30px;}
+    .getStartedBox a.contact:link, .getStartedBox a.contact:visited{font-size: 18px; line-height: 24px;}
+}
+  
+
+@media (min-width: 1399px) and (max-width: 1599px) {
+  .menBox {  width: 300px; }
+}
+  
+  
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+.container {  max-width: 860px; }
+.menu_sec li { margin-left: 30px;  }
+.menu_sec li a { font-size: 17px; line-height: 24px;}
+.nav_top .navbar-brand {  width: 180px; }
+.menBox {  width: 260px; right: 100px; }
+.banner_Itm_Txt h1 {font-size: 20px; line-height: 32px; }
+.banner_Itm_Txt h1 span { font-size: 38px; line-height: 40px;   }
+.trialLeft h3 { font-size:18px; line-height: 46px;}
+.trialRight a {font-size:18px; line-height: 24px; padding: 10px 15px;}
+.heading h2 { font-size:30px; line-height: 38px; }
+.heading p {font-size:16px; line-height: 20px; padding-top: 6px; }
+.featuresBoxes .media .media-body h5 {font-size: 16px; line-height: 18px; }
+.featureBoxesPanel .media .media-body h6{ font-size: 18px; line-height: 22px; }
+h3.plannamestd{font-size: 20px; line-height: 28px; padding-top: 12px;}
+.contentdiv ul { min-height: 730px; }
+.contentdiv ul li { font-size: 14px; line-height: 19px; padding: 7.5px 0px;}
+.buttonclickstd {   width: 150px; font-size: 17px; height: 50px; }
+.banner_Itm_Txt { padding: 70px 50px 20px 50px; min-height: 340px;   }
+.carousel-item img.banpic { height: 340px; }
+.featuresBoxes .media .media-body p { font-size: 14px;
+  line-height: 18px;
+  padding-top: 8px;}
+.chat-container {  height: 340px; width: 63%;
+  margin-left: 40px; }
+.chat {  padding: 10px 0px 19px 0px; background-size: 400px; }
+.contentdiv ul li span {padding-left: 30px;   }
+.firstbox .contentdiv ul li span::before, .secondbox .contentdiv ul li span::before, .thirdbox .contentdiv ul li span::before { font-size: 20px; }
+.header_sec { padding: 10px 0px; }
+.trialSec { padding: 10px 0px; }
+.whatsAppSec {padding: 50px 0px !important; }
+.plansection { padding: 50px 0px !important; }
+.innplansectionBox, .whatsAppBoxes, .featureBoxesPanel { margin-top: 50px;   }
+.whatsAppSec .featuresBoxes .media .media-left::after { height: 40px; bottom: -50px; }
+.featuresBoxes .media { padding-bottom: 35px;   }
+/* .featureBoxesPanel .leftWhatsAppSec .media .media-left::before { height: 45px;
+  bottom: -60px;} */
+.level-1, .level-2{ width: 270px; margin: 0 auto 30px; font-size:19px; line-height: 24px;}
+.level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 30px; }
+.level-2-wrapper li { margin-top: 30px;   }
+.level-3 {font-size:19px; line-height: 24px;}
+.workflowSec { padding: 50px 0px; }
+.workFlowBoxes { margin-top: 50px;   }
+.nav_top .navbar-collapse{ padding-left: 60px;}
+.banner_sec .carousel-indicators li { width: 15px; height: 15px; margin-left: 3px; margin-right: 3px; }
+.banner_sec .carousel-indicators li.active {width: 15px; height: 15px;}
+.message-right .messageinner .message-text, .message-left .message-text {padding: 10px; }
+.message-right .message-text .message-img img, .message-left .message-text .message-img img { width: 50px; height: 50px; }
+.featuresBoxes {margin-top: 0px; }
+.whatsAppSec .featuresBoxes .media:last-child{ padding-bottom: 0px;}
+.featuresection .featureBoxesPanel .row .col-sm-6:last-child .media{ padding-bottom: 0px;}
+.featuresection .featureBoxesPanel .row .col-sm-6:nth-last-child(2) .media{ padding-bottom: 0px;}
+.contentdivbuttonstd {  bottom: -50px; }
+.footerBox p, .footerBox li, .footerBtext p { font-size: 14px; line-height: 20px;}
+.footerBox li { padding: 3px 0px;}
+.footerBtext b {font-size: 16px; line-height: 22px;}
+.footerSec .footerInn .row .col-xl-4{flex: 0 0 30.333333%; max-width: 30.333333%;}
+.footerSec .footerInn .row  .col-xl-2 {flex: 0 0 19.667%; max-width: 19.667%;  }
+.footerBox.footInfo ul li { padding-left: 0px; }
+.footerBottom {padding: 30px 0px; }
+.whatsAppSec .featuresBoxes .media { padding-bottom: 15px; }
+.whatsAppSec .featuresBoxes .media .media-body p { font-size: 13px; line-height: 16px;}
+.featureBoxesPanel .media .media-left{width: 60px; height: 60px; margin-right: 20px;}
+.featuresBoxes .media { padding-bottom: 15px; } 
+.whatsAppSec .featuresBoxes .media .media-left { width: 45px; height: 45px; }
+
+
+
+  /*************pricing*************/
+.pricingsection h6 { font-size:16px; line-height: 20px;}
+.afterpricingsection p { font-size:14px; line-height: 20px;}
+.innerBanner .banner_Itm_Inn h1 b { font-size: 17px; }
+
+
+ /* b2b */
+ .innStepingSec .media .media-body h5 { font-size: 20px; line-height: 30px;}
+ .zigzagContent h3 { font-size: 18px; line-height: 24px;}
+ .innStepingSec .media .media-body p { font-size: 16px; line-height: 22px;}
+ .zigzagContent ul li { font-size: 14px;
+  line-height: 19px;
+  padding: 5px 0px;}
+  .zigzagContent ul li span { padding-left: 30px; }
+ .zigzagContent ul { padding-top: 15px; }
+ .newsec { padding: 40px 0px; }
+ .getStartedBox ul li {font-size: 15px; line-height: 22px;}
+ .getStartedBox h2 {font-size: 26px; line-height: 36px;}
+ .getStartedBox h3 {font-size: 22px; line-height: 30px;}
+ .getStartedBox a.contact:link, .getStartedBox a.contact:visited{font-size: 18px; line-height: 24px;}
+ .zigzagContent ul li span::before { font-size: 20px; top: 4px; }
+ .getStartedBox { min-height: 333px; }
+
+/*whatsapp-notification-campaign*/
+ .whywalinerBoxes .zigzagContent { padding: 15px; }
+ .whywalinerBoxes .zigzagContent h3 { font-size:18px; line-height: 24px; padding-bottom: 10px;}
+ .whywalinerBoxes {margin-top: 20px; }
+.featuresSec{ padding-bottom: 0px;}
+.featuresBoxes .card .card-body h5 { font-size: 16px; line-height: 22px;}
+.featuresBoxes .card .card-body { min-height: 160px; padding: 15px; }
+
+/*whatsapp-chat*/
+.whatsAppChatBoxes .featuresBoxes .card { margin: 0px;}
+.whatsAppChatBoxes .featuresBoxes .card .card-body { padding-top: 0px; }
+.whatsAppChatBoxes .featuresBoxes .card .card-body h5 { font-size: 15px; line-height: 20px; }
+/*whatsapp-notification-lib*/
+.notificationLibTemp .featuresBoxes .card .card-body h5 { font-size:14px; line-height: 18px; }
+.notificationLibTemp .featuresBoxes .card .card-body { min-height: 170px; }
+
+/*intfeatureSec*/
+.intfeatureSec .featuresBoxes .card .card-body { min-height: 190px; }
+.trialFormSecHeading h3 { font-size:18px; line-height: 24px;}
+
+.newautoFeature .featuresBoxes .card .card-body h5{ font-size: 16px; line-height: 20px;}
+
+.healthPic2 img { bottom: -60px; }
+.tabSecBoxes .nav-tabs li {margin: 2px 0px; }
+.tabSecBoxes .card .card-body {min-height: 135px;}
+
+
+
+
+}
+
+
+@media only screen and (max-width: 991px) {
+	
+
+.container {  max-width: 720px; }
+
+.menu_sec li { margin-left: 30px;  }
+.menu_sec li a { font-size: 17px; line-height: 24px;}
+.nav_top .navbar-brand {  width: 180px; }
+.menBox {  width: 200px; right: 50px; }
+.banner_Itm_Txt h1 {font-size: 20px; line-height: 32px; }
+.banner_Itm_Txt h1 span { font-size: 38px; line-height: 40px;   }
+.trialLeft h3 { font-size:18px; line-height: 46px;}
+.trialRight a {font-size:18px; line-height: 24px; padding: 10px 15px;}
+.heading h2 { font-size:30px; line-height: 38px; }
+.heading p {font-size:16px; line-height: 20px; padding-top: 6px; }
+.featuresBoxes .media .media-body h5 {font-size: 16px; line-height: 20px; }
+.featureBoxesPanel .media .media-body h6{ font-size: 16px; line-height: 20px; }
+h3.plannamestd{font-size: 20px; line-height: 28px; padding-top: 12px;}
+.contentdiv ul { min-height: 910px; }
+.contentdiv ul li { font-size: 14px; line-height: 19px; padding: 7.5px 0px;}
+.buttonclickstd {   width: 150px; font-size: 17px; height: 50px; }
+.banner_Itm_Txt { padding: 70px 50px 20px 50px; min-height: 300px;   }
+.carousel-item img.banpic { height: 300px; }
+.featuresBoxes .media .media-body p { font-size: 13px;
+  line-height: 17px;
+  padding-top: 7px;}
+.chat-container {  height: 280px; width: 66%; margin-left: 34px;}
+.chat {  padding: 10px 0px 19px 0px; background-size: 330px; }
+
+.contentdiv ul li span {padding-left: 30px;   }
+.firstbox .contentdiv ul li span::before, .secondbox .contentdiv ul li span::before, .thirdbox .contentdiv ul li span::before { font-size: 20px; }
+.header_sec { padding: 10px 0px; }
+.trialSec { padding: 10px 0px; }
+.whatsAppSec {padding: 50px 0px !important; }
+.plansection { padding: 50px 0px !important; }
+.innplansectionBox, .whatsAppBoxes, .featureBoxesPanel { margin-top: 35px;   }
+.featuresBoxes .media .media-left{ width: 65px; height: 65px;}
+.whatsAppSec .featuresBoxes .media .media-left::after { height: 60px; bottom: -70px; }
+.featuresBoxes .media { padding-bottom: 35px;   }
+/* .featureBoxesPanel .leftWhatsAppSec .media .media-left::before { height: 45px;
+  bottom: -60px;} */
+.level-1, .level-2{ width: 270px; margin: 0 auto 30px; font-size:19px; line-height: 24px;}
+.level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 30px; }
+.level-2-wrapper li { margin-top: 30px;   }
+.level-3 {font-size:19px; line-height: 24px;}
+.workflowSec { padding: 50px 0px; }
+.workFlowBoxes { margin-top: 50px;   }
+.nav_top .navbar-collapse{ padding-left: 60px;}
+.banner_sec .carousel-indicators li { width: 15px; height: 15px; margin-left: 3px; margin-right: 3px; }
+.banner_sec .carousel-indicators li.active {width: 15px; height: 15px;}
+.message-right .messageinner .message-text, .message-left .message-text {padding: 10px; }
+.message-right .message-text .message-img { width: 50px; }
+.message-right .message-text .message-img img, .message-left .message-text .message-img img { width: 50px; height: 50px; }
+.featuresBoxes {margin-top: 0px; }
+.whatsAppSec .featuresBoxes .media:last-child{ padding-bottom: 0px;}
+.featuresection .featureBoxesPanel .row .col-sm-6:last-child .media{ padding-bottom: 0px;}
+.featuresection .featureBoxesPanel .row .col-sm-6:nth-last-child(2) .media{ padding-bottom: 0px;}
+.contentdivbuttonstd {  bottom: -50px; }
+.whatsAppSec .featuresBoxes .media .media-left { width: 45px; height: 45px; margin-right: 15px; }
+.whatsAppSec .featuresBoxes .media { padding-bottom: 15px; }
+.featuresection{ padding: 50px 0px;}
+.featuresection .featuresBoxes .media { padding-bottom: 20px; }
+.footerBox p, .footerBox li, .footerBtext p { font-size: 14px; line-height: 20px;}
+.footerBox li { padding: 3px 0px;}
+.footerBtext b {font-size: 16px; line-height: 22px;}
+.footerBox.footInfo ul li { padding-left: 0px; }
+.footerBottom {padding: 30px 0px; }
+.footerSec { padding: 35px 0; }
+.footerSec .footerBox p { padding-bottom: 5px;}
+.footerSec .footerBox ul{ margin-top: 15px;}
+.heading p br{ display:none;}
+  /*************pricing*************/
+  .pricingsection h6 { font-size:16px; line-height: 20px;}
+  .afterpricingsection p { font-size:14px; line-height: 20px;}
+  .innerBanner .banner_Itm_Inn h1 b { font-size: 17px; }
+  .plansection.pricingsection{ padding: 35px 0px !important;}
+
+
+ /* b2b */
+ .innStepingSec .media .media-body h5 { font-size: 18px; line-height: 20px;}
+ .zigzagContent h3 { font-size: 18px; line-height: 24px;}
+ .innStepingSec .media .media-body p { font-size: 15px; line-height: 22px;
+  padding-top: 5px;   }
+ .zigzagContent ul li { font-size: 14px;
+  line-height: 19px;
+  padding: 5px 0px;}
+  .zigzagContent ul li span { padding-left: 30px; }
+ .zigzagContent ul { padding-top: 15px; }
+ .newsec { padding: 40px 0px; }
+ .getStartedBox ul li {font-size: 15px; line-height: 22px;}
+ .getStartedBox h2 {font-size: 24px; line-height: 32px;}
+ .getStartedBox h3 {font-size: 20px; line-height: 28px;}
+ .getStartedBox a.contact:link, .getStartedBox a.contact:visited{font-size: 16px; line-height: 22px; padding: 12px 25px;}
+ .zigzagContent ul li span::before { font-size: 20px; top: 4px; }
+ .getStartedBox {min-height: 300px;
+  padding: 25px; }
+ .innStepingSec .row .col-sm-9{flex: 0 0 83.333333%; max-width: 83.333333%;}
+
+
+ /*whatsapp-notification-campaign*/
+ .whywalinerBoxes .zigzagContent { padding: 10px; }
+ .whywalinerBoxes .zigzagContent h3 { font-size: 16px;
+  line-height: 20px; padding-bottom: 10px;}
+ .whywalinerBoxes {margin-top: 20px; }
+.featuresSec{ padding-bottom: 0px;}
+
+.featuresBoxes .card .card-body h5{ font-size: 16px;
+  line-height: 20px; }
+.featuresBoxes .card span.icon { font-size: 34px; }
+.trialFormSec .zigzagSecPanel .col-sm-8, .trialFormSec .zigzagSecPanel .col-sm-4{ flex: 0 0 100%;
+  max-width: 100%;}
+.trialFormSec .zigzagSecPanel .col-sm-4{ margin-top: 15px;}
+.trialFormSec .zigzagSecPanel .row{flex-direction: column-reverse; padding-top: 0px;}
+.trialFormSec .zigzagSecPanel .row .col-sm-8{ margin-top: 25px;}
+.featuresBoxes .card .card-body { min-height: 160px; padding: 10px; }
+
+/*whatsapp-chat*/
+.whatsAppChatBoxes .featuresBoxes .card { margin: 0px;}
+.whatsAppChatBoxes .featuresBoxes .card .card-body { padding-top: 0px; min-height: inherit; }
+.whatsAppChatBoxes .featuresBoxes .card .card-body h5 { font-size: 15px; line-height: 20px; }
+.whatsAppChatBoxes .featuresBoxes .row{ justify-content: center;}
+.whatsAppChatBoxes .featuresBoxes .row .col-md-6{ margin-top: 15px;}
+.whatsAppChatBoxes .whywalinerBoxes { margin-top: 5px; }
+
+
+/*whatsapp-notification-lib*/
+.notificationLibTemp .featuresBoxes .card .card-body h5 { font-size:14px; line-height: 18px; }
+.notificationLibTemp .featuresBoxes .card .card-body { min-height: 170px; }
+
+
+.engagement_sustained__bookings_img_inner img { width: 100%;  object-fit: contain; }
+.information_img_inner img { width: 100%; object-fit: contain; }
+.whatsAppChatBoxes.whywalinerSec .featuresBoxes .card .card-body { min-height: 120px; } 
+
+
+/*intfeatureSec*/
+.intfeatureSec .featuresBoxes .card .card-body { min-height: 200px; }
+.trialFormSecHeading h3 { font-size:18px; line-height: 24px;}
+.newautoFeature .featuresBoxes .card .card-body h5{ font-size: 14px; line-height: 17px;}
+.missionSec.row{ flex-direction: row !important; }
+.missionSec.row .zigzagContent { margin-top: 30px; }
+
+
+.banner_sec .carousel-inner{ overflow: hidden;}
+.tabSecBoxes .nav-tabs li {margin: 2px 0px; }
+.tabSecBoxes .card .card-body {min-height: 170px;}
+
+
+} 
+ 
+ 
+@media (min-width: 768px) and (max-width: 991px) {
+
+.container {  max-width: 720px; }
+
+}
+
+
+ 
+@media only screen and (max-width: 767px){
+
+.container {  max-width: 540px; }
+.header_sec{z-index: 999;}
+.nav_top .navbar-toggler{ border-color: none; background:transparent;}
+.nav_top .navbar-toggler{ padding: 10px; margin: 15px 15px 15px 0px; border:none;}
+.nav_top .navbar-toggler .icon-bar {display: block;  width: 30px;
+  height: 3px;   border-radius: 1px; background-color: #4848bb;}
+.nav_top .navbar-toggler .icon-bar + .icon-bar {  margin-top: 5px;}
+.navbar-toggler { margin-right: 15px;}
+.navbar-toggler { padding: 10px;}
+.nav_top .navbar-collapse{ position:absolute; left:0; top:100%; width:100%; background:#fff; z-index: 99; padding-left: 0;}
+.header_sec .container{ max-width:100%; padding:0px ;}
+.nav_top .navbar-brand { margin-left: 15px; }
+.menu_sec li a { padding: 5px 15px; width: 100%;  display: inline-block; }
+.drop_arrow{position: absolute;
+  right: 25px;
+  top: 22px;
+  width: 25px;
+  height: 25px;
+  margin-top: -12.5px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 25px;}
+  .drop_arroww { right: 25px; top: 18px; }
+  .nav_top .navbar-nav > li > .dropdown-menu{ width:100%; background: #fff;}
+  .nav_top .navbar-nav > li > .dropdown-menu li{ border-bottom: 1px solid #f3f3f3;}
+  .nav_top .navbar-nav > li > .dropdown-menu li a { font-size: 14px; line-height: 26px; padding: 5px 20px;}
+
+  .nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu{ width:100%; background: #fff; height: 150px; overflow-y: auto;}
+  .nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu li{ border-bottom: 1px solid #f3f3f3;}
+  .nav_top .navbar-nav > li > .dropdown-menu li .dropdown-menu li a { font-size: 14px; line-height: 26px; padding: 5px 30px;}
+
+  .nav_top .navbar-nav > li > .dropdown-menu li:hover .drop_arroww{ transform: rotate(0deg); -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out;}
+.header_sec { padding: 0px 0px; }
+.leftDesign { width: 30px; left: 0px; top: 5px;}
+.rightDesign {width: 30px;  right: 0px; top: 5px; }
+.menBox {   width: 145px; right: 50px; }
+.whatsAppBot { width: 50px;  right: 90px; }
+.banner_Itm_Txt h1 { font-size: 18px; line-height: 22px; }
+.banner_Itm_Txt h1 span { font-size: 30px; line-height: 34px; }
+.banner_Itm_Txt p {font-size: 14px;
+  line-height: 18px;
+  padding-top: 15px; }
+.leftWhatsAppSec h3 { font-size: 24px; line-height: 30px;}
+.featuresBoxes .media .media-body p {font-size:13px; line-height: 18px;}
+.moredetails, .banner_Itm_Txt h6 a {font-size:13px;}
+.chat-container {
+  height: 360px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 280px;
+  padding: 0px 18px 0px 12px;
+  margin-left: 50px;
+}
+.chat {padding: 10px 42px 26px 42px;  margin-top: 15px;  background-size: 420px; }
+.menu_sec li { margin-left: 0px; }
+.menu_sec li a { font-size:14px; }
+.carousel-item img.banpic { height: 250px; }
+.banner_Itm_Txt { padding: 40px 120px 20px 30px; height: 250px; min-height:inherit; }
+.whatsAppSec {padding: 30px 0px !important;}
+.featuresBoxes .media .media-body h5 { font-size:14px; line-height: 20px;}
+.whatsAppSec .col-sm-6 { flex: 0 0 100%;  max-width: 100%; }
+.featureBoxesPanel .media .media-body h6 { font-size: 15px;
+  line-height: 20px; }
+.featureBoxesPanel .featuresBoxes .media { padding-bottom: 15px; }
+.featureBoxesPanel .featuresBoxes { margin-top: 0px; }
+h3.plannamestd { font-size: 16px;  padding-top: 15px; }
+.contentdiv {padding: 0px 10px; }
+.contentdiv ul li {padding:7.5px; font-weight: 400;}
+.buttonclickstd { font-size: 13px; width: 100px; height: 40px;   line-height: 15px;
+  padding: 0px;  }
+.titlefeature { font-size:24px; line-height: 34px;}
+.featureBoxesPanel .col-sm-6 { flex: 0 0 100%;  max-width: 100%; }
+.featuresection {padding: 30px 0px; }
+.featureBoxesPanel .row .col-sm-6:nth-last-child(2) .leftWhatsAppSec .media .media-left::before{ display: block;}
+.plansection {padding: 30px 0px 60px !important;}
+.plansection .col-sm-4 { flex: 0 0 100%;  max-width: 100%; margin-bottom: 50px; }
+.contentdiv ul {min-height: inherit; }
+.contentdivbuttonstd {  bottom: -40px; }
+.banner_sec .container-indicators .carousel-indicators { padding-left: 30px; }
+.trialRight a { font-size: 14px;  line-height: 22px;  padding: 7px 10px; }
+.trialLeft h3 { font-size: 15px; line-height: 36px; }
+.heading h2 { font-size: 26px; line-height: 32px; }
+.heading p { font-size: 14px; }
+.leftWhatsAppSec { margin-top: 15px; } 
+.featuresBoxes .media .media-left{ width: 65px;
+  height: 65px; margin-right: 15px;}
+.whatsAppSec .featuresBoxes .media .media-left::after { height: 30px; bottom: -35px; }
+.workflowSec { padding: 30px 0px; }
+.level-1, .level-2{ width: 200px; margin: 0 auto 30px; font-size:16px; line-height: 20px; padding: 15px;}
+.level-1::before, .level-2-wrapper > li::before, .level-2::before, .level-3-wrapper > li::before { height: 30px; }
+.level-2-wrapper li { margin-top: 30px;   }
+.level-3 {font-size:16px; line-height: 20px; padding: 15px;}
+.workflowSec { padding: 30px 0px; }
+.workFlowBoxes { margin-top: 30px;   }
+.level-3 {padding: 10px; font-size: 14px; } 
+.featureBoxesPanel .leftWhatsAppSec .media .media-left::before { height: 40px; bottom: -52px; }
+.plansection .col-sm-4:last-child  { margin-bottom: 0px; }
+.footerBox.footInfo ul li br{ display: none;}
+.footerBottom { padding: 25px 0px; }
+.footerBtext b { font-size: 15px; line-height: 20px; }
+.afterpricingsection {margin-top: 40px; }
+.featuresection .featureBoxesPanel .row .col-sm-6:nth-last-child(2) .media { padding-bottom: 15px; }
+
+ /* b2b */
+ .innStepingSec .row .col-sm-9 { flex: 0 0 100%; max-width: 100%; }
+ .zigzagContent h3 { font-size: 16px; line-height: 20px; }
+ .zigzagContent ul { padding-top: 10px; }
+ .zigzagContent ul li span::before { font-size: 16px; top: 4px; }
+ .zigzagContent ul li span { padding-left: 25px; }
+ .zigzagContent ul li {line-height: 18px;}
+ .zigzagSecPanel { padding: 20px 0px; }
+
+  /*whatsapp-notification-campaign*/
+  .whywalinerBoxes .row .col-sm-6:last-child{ margin-top: 30px;}
+  .featuresBoxes .row .col-sm-6:last-child{ margin-top: 0px;}
+  .trialFormSec .zigzagSecPanel .col-sm-4{ margin-top: 15px;}
+  .trialFormSec .zigzagSecPanel .row{flex-direction: column-reverse; padding-top: 0px;}
+  .trialFormSec .zigzagSecPanel .row .col-sm-8{ margin-top: 25px;}
+  .autoFeatures .featuresBoxes .row .col-md-4:nth-child(2) .card { transform: inherit;   }
+  .autoFeatures .featuresBoxes .card .card-body {  min-height: 290px;   }
+  .autoFeatures .featuresBoxes .row{justify-content: center;}
+  .autoFeatures .featuresBoxes .row .col-md-4:last-child .card .card-body {  min-height: inherit;   }
+
+/*whatsapp-notification-lib*/
+.notificationLibTemp .featuresBoxes .card .card-body h5 { font-size:14px; line-height: 18px; }
+.notificationLibTemp .featuresBoxes .card .card-body { min-height: 170px; }
+
+
+.zigzagPicInner img { width: 100%; object-fit: contain; }
+.conversations_img_inner img { width: 100%; object-fit: contain; }
+.whatsAppChatBoxes.whywalinerSec .featuresBoxes .card .card-body { min-height: inherit; } 
+.highlyPotentFunc .featuresBoxes .card .card-body { min-height: 210px; }
+
+/*intfeatureSec*/
+.intfeatureSec .featuresBoxes .card .card-body { min-height: 200px; }
+.trialFormSecHeading h3 { font-size:18px; line-height: 24px;}
+.faqSec .featuresBoxes .card .card-header h5 button {font-size:18px; line-height: 24px;}
+.missionSec.row .zigzagContent h3 { font-size: 18px !important; line-height: 24px !important; }
+
+
+.healthPic2 img { height: 410px; object-fit: contain; position: inherit;
+  left: inherit; bottom: inherit; }
+  .beautyFeatureSec .featuresBoxes .card { margin-bottom: 30px; }
+  .beautyFeatureSec .featuresBoxes .row { align-items: center; justify-content: center; }
+  .beautyFeatureSec .featuresBoxes .card .card-body {
+    min-height: 140px;
+  }
+  .beautyFeatureSec .featuresBoxes .row .col-md-4:last-child .card { margin-bottom: 0px; }
+  /*18-08-23*/
+  .modal{ padding: 0px;}
+  .modal .modal-dialog { max-width: 480px; width: 480px; }
+  .absfrmBox .input-group{ margin-top: 6px;}
+  .menBox.slideInRight {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
+  /*contact us*/
+  .contactUssection .innplansectionBox .heading h2 { font-size: 18px; line-height: 26px; }
+  .getStartedBox{ margin-top: 15px;}
+  .contactPicBox { margin-top: 15px; }
+
+}
+
+
+
+@media only screen and (max-width: 575px){ 
+
+
+
+  .banner_Itm_Txt h1 span { font-size: 26px; line-height: 28px;   }
+  .banner_Itm_Txt h1 { font-size: 16px; line-height: 22px;   }
+  .menBox {width: 125px; right: 20px; }
+  .banner_Itm_Txt { padding-top: 50px;}
+  .nav_top .navbar-brand { width: 150px;   }
+  .nav_top .navbar-toggler { margin: 10px 15px 10px 0px; }
+  .trialLeft { text-align: center;   }
+  .trialRight { text-align: center; margin-top: 5px;   }
+  .trialLeft h3 { font-size: 15px; line-height: 24px;   }
+  .trialSec {  padding: 10px 0px 15px 0px;   }
+  .heading h2 { font-size: 20px; line-height: 26px;   }
+  .heading p br{ display:none;}
+  .innplansectionBox, .whatsAppBoxes, .featureBoxesPanel { margin-top: 10px; }
+  .whatsAppSec .featuresBoxes .media .media-left::after { height: 30px; bottom: -45px;   }
+  .footerBox p{ font-size: 14px; line-height: 18px;}
+  /*************pricing*************/
+  .innerBanner .banner_Itm_Inn h1 b {
+    font-size: 14px;
+    line-height: 18px !important;
+    padding-right: 40px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+   /* b2b */
+  .innStepingSec .media { padding: 10px 0px;   }
+  .innStepingSec .media .media-body h5 { font-size: 16px; line-height: 18px;   }
+  .innStepingSec .media .media-body p { font-size: 14px; line-height: 20px; }
+  .innStepingSec .media .media-left::after { height: 40px; bottom: -40px;   }
+  .zigzagContent { padding-top: 15px;   }
+
+    /*whatsapp-notification-campaign*/
+    .whywalinerBoxes .row .col-sm-6:last-child{ margin-top: 0px;}
+    .whywalinerBoxes .zigzagContent{ margin-bottom: 15px;}
+    .featuresBoxes .card {  margin-bottom: 15px; }
+    .featuresBoxes .card .card-body {  padding: 15px; min-height: inherit;     }
+    .trialFormSec .zigzagSecPanel .col-sm-4{ margin-top: 0px;}
+.trialFormSec .zigzagSecPanel .row{flex-direction: column-reverse; padding-top: 0px;}
+.trialFormSec .zigzagSecPanel .row .col-sm-8{ margin-top: 5px;}
+.autoFeatures .featuresBoxes .card .card-body {  min-height: inherit;   }
+.trialFormSecHeading h3 {font-size: 18px; line-height: 22px; }
+
+
+/*whatsapp-notification-lib*/
+.notificationLibTemp .featuresBoxes .card .card-body h5 { font-size:14px; line-height: 18px; }
+.notificationLibTemp .featuresBoxes .card .card-body { min-height: inherit; }
+
+/*intfeatureSec*/
+.intfeatureSec .featuresBoxes .card .card-body { min-height: inherit; }
+.trialFormSecHeading p br{ display:none;}
+.missionSec.row .zigzagContent h3 { font-size: 18px !important; line-height: 24px !important; }
+
+.beautypic1 img {
+  height: inherit;
+  object-fit: contain;
+  object-position: top;
+}
+
+.modal .modal-content .modal-header .close { width: 30px; height: 30px; font-size: 24px;
+  line-height: 24px;}
+.modal .modal-content .modal-header h4 { font-size: 16px; line-height: 20px;}
+.frmBox input[type="text"], .frmBox input[type="email"], .frmBox input[type="number"], .frmBox textarea, .frmBox select, .select::after { padding: 10px; }
+
+  .absfrmBox p.phone-label { bottom: -12px;   }
+  /*18-08-23*/
+  .modal .modal-dialog { max-width: 400px; width: 400px; margin: 0 auto; margin-top: 0.5rem; }
+  .frmDetailsGrp .mb-2, .frmDetailsGrp .mb-3{ margin-bottom: 0.25rem !important;}
+  .realested-box-section.zigzagSecPanel .card {min-height: inherit;}
+  .tabSecBoxes { margin-top: 20px; } 
+  .tabSecBoxes .nav-tabs li a { font-size: 13px;   }
+  .tabSecBoxes .card { margin: 5px 0px; align-items: center;  }
+  .tabSecBoxes .card .card-body { min-height: inherit; text-align: center;align-items: center;}
+  .chat-container { padding: 0px 19px 0px 12px; }
+  .message-right .message-text .message-img { width: 40px; }
+  .message-right .message-text .message-img img, .message-left .message-text .message-img img { width: 40px; height: 40px; }
+
+  .modal .modal-content .close {width: 30px; height: 29px; border-radius: 0px; font-size: 24px; line-height: 20px;
+  right: 5px; top: 5px; }
+
+.sitemap {column-count: 1; column-gap: 0;}
+
+  }
+@media (min-width:532px) and (max-width: 574px) {
+
+  .container {  max-width: 100%; }
+  .whatsAppSec .featuresBoxes .media .media-left::after { height: 30px; bottom: -35px;   }
+
+
+
+  }
+
+ 
+
+@media only screen and (max-width: 480px){ 
+
+
+.nav_top .navbar-brand {  width: 115px; }
+.banner_Itm_Txt { padding: 15px; height: 200px; }
+.banner_Itm_Txt h1 { font-size: 14px; line-height: 18px; }
+.banner_Itm_Txt h1 span { font-size: 22px; line-height: 24px; }
+/* .banner_Itm_Txt h1 br{ display:none;} */
+.menBox {  width: 95px; }
+.whatsAppBot {right: 35px; top: 40px; }
+.chat {  padding: 7px 17px 15px 17px; width: 280px;
+  margin: 0 auto; }
+.chat-container { height: 240px; padding: 0px 16px 0px 0px; margin-left: 45px; }
+
+
+.titlefeature { font-size: 22px; line-height: 28px;   }  
+.featureBoxesPanel .media .media-body h6 { font-size: 15px; line-height: 18px; }
+.featureBoxesPanel .leftWhatsAppSec .media .media-left::before { bottom: -67px; }
+.featuresBoxes .media .media-left::after {  height: 50px; bottom: -100%; margin-top: -25px; }
+.carousel-item img.banpic {  height: 200px; }
+.banner_sec .container-indicators .carousel-indicators { padding-left: 15px; }
+.heading h2 { font-size: 18px; line-height: 22px; }
+.chat { background-size: 280px; }
+.whatsAppSec .featuresBoxes .media .media-left { margin-right: 15px;}
+.whatsAppSec .featuresBoxes .media .media-left::after { height: 30px;  bottom: -55px; }
+.level-1, .level-2, .level-3 { width: 100%; font-size: 14px;
+  line-height: 17px; padding: 10px;}
+.featureBoxesPanel .media .media-left {margin-right: 15px;}
+.footerBtext b { font-size: 14px; line-height: 18px; }
+.footerBtext p { font-size: 13px; line-height: 18px; }
+.featuresBoxes .media .media-left { width: 50px; height: 50px; }
+.featureBoxesPanel .featuresBoxes .media { padding-bottom: 7.5px; }
+.featuresection .featureBoxesPanel .row .col-sm-6:nth-last-child(2) .media { padding-bottom: 7.5px; }
+.innerBanner .banner_Itm_Txt h1 span { font-size: 20px; line-height: 22px; }
+.innerBanner .banner_Itm_Inn h1 b { font-size: 13px; line-height: 17px !important; padding-right: 90px; }
+
+
+   /* b2b */
+.innStepingSec .media .media-left { width: 60px;  height: 60px; margin-right: 10px; }
+.innStepingSec .media .media-body p { font-size: 13px; line-height: 16px; }
+.innStepingSec .media .media-left::after { height: 50px; bottom: -50px; }
+.getStartedBox h2 { font-size: 20px; line-height: 24px; }
+.getStartedBox ul li { font-size: 14px; line-height: 18px; padding: 0px; }
+.getStartedBox h3 { font-size: 16px; line-height: 18px; margin-top: 20px; }
+
+/*intfeatureSec*/
+.faqSec .featuresBoxes .card .card-header h5 button { font-size: 16px; line-height: 20px;
+  padding: 10px; }
+.phonenumber { padding: 10px; }
+.frmDetailsGrp .mb-2, .frmDetailsGrp .mb-3{ margin-bottom: 0.25rem !important;}
+
+/*18-08-23*/
+.modal .modal-dialog { max-width: 300px; width: 300px; margin: 0 auto; margin-top: 0.5rem; }
+.footerBox li{ font-size: 13px; line-height: 18px; }
+.footerBox ul li a { padding-left: 15px; }
+
+
+} 
+@media only screen and (min-width: 320px) and (max-width: 345px) {
+  .level-2-wrapper::before {
+    left: 32%;
+  }
+}
+
+
+
+.managebusinesstitle p {
+  font-size: 20px;
+  line-height: 26px;
+}
+.zigzagContent li.realEstateBold {
+  font-weight: bold;
+}
+.workFlowBoxes img{
+  width: 100%;
+}
+
+
+
+
+  

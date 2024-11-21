@@ -1,0 +1,58 @@
+.pricingtop {
+    padding: 50px !important;
+}
+
+.getQuote{
+    /* background-color: rgba(65, 60, 60, 0.26); */
+    z-index:1;
+    position:absolute;
+    /* top:0; */
+    height:100%;
+    width:100%;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.getQuote .btn, form .btn{
+    /* margin-top:80px; */
+    font-family: "Poppins", sans-serif;
+    transition:all 0.3s ease-in-out;
+    padding: 5px 38px;
+    cursor:pointer;
+    background-color:#198995;
+    color:white;
+    border:none;
+    border-radius: 16px;
+    box-shadow: 0px 0px 6px 0px rgba(61, 65, 68, 0.219);
+}
+.btn:hover{
+    background-color:#43c1cf;
+    transform:scale(1.1); 
+
+}
+
+.hero video{
+    /* height:118vh; */
+    filter:brightness(0.6);
+    width:100vw;
+}
+.getQuote h1{
+    width:70%;
+    padding-top:5%;
+    text-align:center;
+    color:#ffffff;
+    font-weight: 400;
+    font-size:24px;
+    margin-bottom:20px;
+}
+.hero{
+    /* height:100vh; */
+    overflow:hidden;
+    display: grid;
+    grid-auto-flow:row;
+    justify-content: space-around;
+    text-align:center;
+}
+
